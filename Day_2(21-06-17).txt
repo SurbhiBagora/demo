@@ -1,0 +1,104 @@
+Q1.Write a pseudocode to display your personal details.
+Ans.
+Begin
+         Display "Name";
+         Display Age;
+         Display "Address";
+         Display Contact;
+End
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q2.Write a pseudocode to accept 2 numbers and after that display the sum of the numbers.
+Ans.
+Begin
+          numeric Number1;
+          numeric Number2;
+          numeric Sum;
+          
+          display "Enter first number";
+          accept Number1; 
+          display "Enter second number";
+          accept Number2;
+
+          Sum=Number1 + Number2;
+End
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q3.Write pseudocode to calculate Simple Interest.for that we have to accept Rate, Time, Amount.
+Ans.
+Begin
+         numeric Rate;
+         numeric Time;
+         numeric Amount;
+
+         display "Enter Amount";
+         accept Amount;
+         display "Enter Rate";
+         accept Rate;
+         display "Enter Time";
+         accept Time;
+
+
+        Simple_Interest = (Amount *Rate* Time)/100;
+
+       display Simple_Interest;
+End
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q4.Write a pseudocode to accept the student details along with marks of english,science,and Maths. Calculate total and percentage.
+Ans.
+Begin
+         numeric Eng_marks;
+         numeric Sci_marks;
+         numeric Maths_marks;
+         character Name;
+         numeric Age;
+         character ID;
+       
+         accept Name;
+         accept Age;
+         accept ID;
+
+         display Name;
+         display Age;
+         display ID; 
+         
+         display "Enter Eng_marks";
+         accept Eng_marks;
+         display "Enter Sci_marks";
+         accept Sci_marks;
+         display "Enter Maths_marks";
+         accept Maths_marks;
+    
+         total=(Eng_marks+Sci_marks+Maths_marks);
+         display total;
+    
+         Percentage=(Total)/3;
+         display percentage;
+End
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q5.Write the pseudocode to accept age and check whether student is eligible for voting or not?
+Ans.
+Begin
+         numeric Age;
+
+         display "Enter Age";
+         accept Age;
+
+         if Age>=18
+                       begin
+                             display "Eligible for Voting";
+                       end
+
+         else
+                     begin
+                            display "Not Eligible for Voting";
+                     end
+End
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------

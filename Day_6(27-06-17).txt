@@ -1,0 +1,55 @@
+Q1.Write a java program to create four fuction fro Add, Sub,Mul,Div.
+All the function must have variables for accepting two number using function argument and calculating. then display the result.All the function must be called inside main function without declaring the object. All the function must return the result to the calling function.
+
+Ans.
+package javaexercise;
+import java.util.Scanner;
+
+public class Calc
+{
+    public int Add(int a, int b)
+    {
+        int sum=a+b;
+        return sum;
+    }
+    
+    public int Sub(int a, int b)
+    {
+        int sub=a-b;
+        return sub;
+    }
+    
+    public int Mul(int a, int b)
+    {
+        int mul=a*b;
+        return mul;
+    }
+    
+    public int Div(int a, int b)
+    {
+        int div=a/b;
+        return div;
+    }
+    public static void main(String[] args)
+    {
+       Calc cobj=new Calc();
+       Scanner sin= new Scanner(System.in);
+       int num1,num2;
+       int result;
+       System.out.println("Enter First Number");
+       num1=sin.nextInt();
+       System.out.println("Enter Second Number");
+       num2=sin.nextInt();
+       
+       result=cobj.Add(num1,num2);
+       System.out.println(result);
+       result=cobj.Sub(num1,num2);
+       System.out.println(result);
+       result=cobj.Mul(num1,num2);
+       System.out.println(result);
+       result=cobj.Div(num1,num2);
+       System.out.println(result);
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

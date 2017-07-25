@@ -1,0 +1,203 @@
+
+Q1.Write a program in java to accept 10 number and display the total count of no. greater than 10.
+
+Ans.
+package javaexercise;
+import java.util.Scanner;
+
+public class AcceptEx {
+    int n=1;
+    Scanner sin=new Scanner(System.in);
+    
+    while(n<=10)
+    {
+        System.out.println("Enter the number");
+    }
+    public void numcount()
+    {
+        int num,count=0;
+        Scanner sin=new Scanner(System.in);
+        for(int i=0;i<10;i++)
+        {
+            System.out.println("Enter the number");
+            num=sin.nextInt();
+            if(num>10)
+            {
+                count=count+1;
+            }
+        }
+        System.out.println(count);
+    }
+            
+    public static void main(String[] args)
+    {
+        AcceptEx Aobj= new AcceptEx;
+        Aobj.numcount();
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q2.Write a java program to accept Movie Details like MovieID,MovieName,ActorName,DirectorName,YearOfRelease,Language,Total_Income,rating,Duration.
+Ans.
+package javaexercise;
+import java.util.Scanner;
+
+public class MVDetail 
+{
+ String MovieID;
+ String MovieName;
+ int Total_Income;
+ String ActorName;
+ String DirectorName;
+ int YOR;
+ String Lang;
+ int Rating;
+ 
+ 
+ int countmovie=0;
+ int sumtotal=0;
+ 
+ String Choice;
+ 
+ Scanner sin=new Scanner(System.in);
+ 
+ public void MVDetails()
+ {
+     do
+     {
+         System.out.println("Enter MovieID");
+         MovieID=sin.next();
+         
+         System.out.println("Enter MovieName");
+         MovieName=sin.next();
+         
+         System.out.println("Enter Total_Income");
+         Total_Income=sin.nextInt();
+         
+         
+         countmovie=countmovie+1;
+         sumtotal= sumtotal+Total_Income;
+         
+         System.out.println("Enter Your Choice");
+         Choice=sin.next();
+
+         while(Choice=="n");
+         System.out.println("Total Movies + Count Movie");
+         System.out.println("Total_Income + sumtotal");
+     }
+     
+     float Duration;
+     Duration=sin.nextFloat();
+     int countMovieDurationTime=0;
+     if(Duration>=1.5)
+     {
+         countMovieDurationTime=countMovieDurationTime+1;
+     }
+ }
+     public static void main(String[] args)
+     {
+         MVDetail md= new MVDetail();
+         md.MVDetails();
+     }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q3.Write a java program to accept the details of 10 employees.display the total bonus given to the employees during festival season.bonus criteria is given below:
+if sal is 10000 bonus will be 30%.
+if sal is 50000 bonus will be 20%.
+if sal is 100000 bonus will be 10%.
+
+details will be employee name and employee sal.
+
+Ans.
+
+package javaexercise;
+import java.util.Scanner;
+
+public class EmpBonus 
+{
+ String Ename;
+ int Sal;
+ int bonus;
+ 
+ Scanner sin= new Scanner(System.in);
+ 
+ public void Edetail()
+ {
+     for(int i=0;i<=10;i++)
+ {
+     System.out.println("Enter Empdetails");
+     Ename=sin.next();
+     Sal=sin.nextInt();
+     
+     if(Sal<=10000)
+     {
+         bonus=(10000*(30/100));
+     }
+     else if(Sal<=50000)
+     {
+         bonus=(50000*(20/100));
+     }
+     
+     else if(Sal<=100000)
+     {
+         bonus=(100000*(10/100));
+     }
+ }
+ }
+ public static void main(String[] args)
+ {
+     EmpBonus Eb=new EmpBonus();
+     Eb.Edetail();
+ }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q4.Write a program to accept a number of any digit and reverse the number.
+Ans.
+package javaexercise;
+import java.util.Scanner;
+
+public class Rev 
+{
+    int m,n,res=0;
+    public void Reverse()
+    {
+        Scanner sin=new Scanner(System.in);
+        
+        System.out.println("Enter the Number");
+        n=sin.nextInt();
+        
+        while(n>0)
+        {
+            m=n%10;
+            res=res*10+m;
+            n=n/10;
+        }
+        System.out.println("Rev of digit"+res);
+    }
+    
+    public static void main(String[] args)
+    {
+        Rev robj= new Rev();
+        robj.Reverse();
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q5.Write a menu driven program for calculator using java language.menu details are mentioned below:
+1.Addition.
+2.Substraction.
+3.Multiplication.
+4.Division.
+5.Percentage.
+6.Exit.
+
+Ans.
+
+Unable to code. how to code this?
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

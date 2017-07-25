@@ -1,0 +1,40 @@
+Q1.Write to accept Three numbers and display largest number using conditions only.
+Ans.
+
+package Javaexercise;
+import java.util.Scanner;
+ 
+class Largest
+{
+   public static void main(String args[])
+   {
+      int x, y, z;
+      System.out.println("Enter three numbers ");
+      Scanner sin = new Scanner(System.in);
+ 
+      x =sin.nextInt();
+      y = sin.nextInt();
+      z = sin.nextInt();
+ 
+      if ( x > y && x > z )
+         System.out.println("First number is largest.");
+      else if ( y > x && y > z )
+         System.out.println("Second number is largest.");
+      else if ( z > x && z > y )
+         System.out.println("Third number is largest.");
+      else   
+         System.out.println("Wrong");
+   }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q2.Write a program in java to accept a string and check whether 3rd character of string is 'S' or not without using readymade string function.
+
+Q3.Write a program in java to accept a string and display the last character of the string without using readymade string functions.
+
+Q4. Write a program in java to accept a string and replace third character with 'T' without using readymade string functions.
+
+
+
+UNABLE TO CODE THESE ABOVE 3 QUESTIONS. ALTHOUGH I HAVE ROUGH IDEA IN MY MIND BUT UNABLE TO APPLY IT IN FORM OF CODING.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------

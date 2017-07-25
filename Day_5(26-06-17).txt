@@ -1,0 +1,221 @@
+Q1. Write a program in java to accept 10 numbes and display the sum of 10 numbers.
+Ans.
+
+package javaexercise;
+import java.util.Scanner;
+
+public class Accept 
+{
+    public static void main(String[] args)
+    {
+    int num, total=0;
+    Scanner sin = new Scanner(System.in);
+    int i=1;
+    while(i<=10)
+    {
+        System.out.println("Enter the Number");
+        num= sin.nextInt();
+        total= total+num;
+        i=i+1;
+    }
+    System.out.println("The Sum is"+total);
+}
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q2.Write a program in java to accept 5 Numbers and display maximum number
+Ans.
+
+package javaexercise;
+import java.util.Scanner;
+
+public class Max 
+{
+    public static void main(String[] args)
+    {
+        int num = 0 , max=0;
+        
+        Scanner sin= new Scanner(System.in);
+        int i=1;
+        while(i<=5)
+        {
+            System.out.println("Enter the Number");
+            num=sin.nextInt();
+            
+            if(num>max)
+            {
+                max=num;
+            }
+            i=i+1;
+        }
+            System.out.println("Maximum Number is"+num);
+   }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q3. 
+a) Write a program in java to swap two numbers.
+b) how to swap the two no. without using 3rd variable.
+
+Ans. a)
+
+package javaexercise;
+
+import java.util.Scanner;
+
+public class SwapTwoN 
+{
+  public static void main(String[] args)
+  {
+      int num1,num2,temp;
+       Scanner sin = new Scanner(System.in);
+       
+       System.out.println("Enter first no.");
+       num1=sin.nextInt();
+       
+       System.out.println("Enter second no.");
+       num2=sin.nextInt();
+       
+       temp=num1;
+       num1=num2;
+       num2=temp;
+       
+       System.out.println("Value of num1 is"+num1);
+       System.out.println("Value of num2 is"+num2);
+  }
+}
+
+-------------------------------------------------------------------
+
+b)
+package javaexercise;
+import java.util.Scanner;
+
+public class SwapE3 
+{
+    public static void main(String[] args)
+    {
+        int a,b;
+        Scanner sin = new Scanner(System.in);
+        System.out.println("Enter first number");
+        a=sin.nextInt();
+        System.out.println("Enter second number");
+        b=sin.nextInt();
+        
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        
+        System.out.println("Value of First Number"+a);
+        System.out.println("Value of Second Number"+b);
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q4.Write a program in java to display multiplication table of two.
+Ans.
+
+package javaexercise;
+import java.util.Scanner;
+
+public class TableEx 
+{
+ public static void main(String[] args)
+ {
+     Scanner sin= new Scanner(System.in);
+     
+     int num, i;
+     System.out.println("Enter the number of which you want table");
+     num=sin.nextInt();
+     
+     for(i=1;i<=10;i++)
+     {
+         System.out.println(num*i);
+     }
+ }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q5. Write a java program to accept marks of three subjects and display pass if percentage of marks is greater than equal to 50 and display fail if marks is less than 50.
+
+Ans.
+
+package javaexercise;
+import java.util.Scanner;
+
+public class ResultEx 
+{
+    public static void main(String[] args)
+    {
+        String Stdname;
+        int Stdage;
+        int m1,m2,m3;
+        float per;
+        
+        Scanner sin= new Scanner(System.in);
+        
+        System.out.println("Enter Student Name");
+        Stdname=sin.next();
+        
+        System.out.println("Enter Student Age");
+        Stdage=sin.nextInt();
+        
+        
+        System.out.println("Enter the marks of first subject");
+        m1=sin.nextInt();
+        
+        System.out.println("Enter the marks of second subject");
+        m2=sin.nextInt();
+        
+        System.out.println("Enter the marks of third subject");
+        m3=sin.nextInt();
+        
+        per=(m1+m2+m3)/3;
+        
+        if(per>=50)
+        {
+          System.out.println("PASS");
+        }
+        else
+        {
+            System.out.println("FAIL");
+        }
+    }
+}
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q6. Write a java program to accept the product details like ProductID, ProductName, ProductPrice,ProductQuantity and display the sum of total amount.
+
+Ans.
+package javaexercise;
+import java.util.Scanner;
+
+public class ProductDetails 
+{
+    public static void main(String[] args)
+    {
+        String PID,Pname;
+        int Pprice;
+        int Pquantity,sum;
+       
+        Scanner sin= new Scanner(System.in);
+        
+        System.out.println("Enter PID");
+        PID=sin.next();
+        System.out.println("Enter Pname");
+        Pname=sin.next();
+        System.out.println("Enter Pprice");
+        Pprice=sin.nextInt();
+        System.out.println("Enter Pquantity");
+        Pquantity=sin.nextInt();
+        
+        sum=(Pprice*Pquantity);
+   
+        System.out.println("Total amount is" +sum);
+    }
+}

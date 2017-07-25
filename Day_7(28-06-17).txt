@@ -1,0 +1,138 @@
+Q1.Write a program in java to accept student details like
+
+Student ID String and must follwed by 4 characters.
+Student Name String
+Student Age int and must not be greater than 100
+Student City String
+Student Country String only India is allowed.
+
+Accept details of 10 Students
+Display the total counts of students whose age is greater than 21
+Display the total count of student who belongs to similar city.
+
+Ans.
+
+package javaexercise;
+import java.util.Scanner;
+
+public class StudentDetail 
+{
+   public static void main(String[] args)
+        {
+            String StudentID,StudentName;
+            int StudentAge = 0;
+            String StudentCity;
+            String StudentCountry;
+            
+            Scanner sin=new Scanner(System.in);
+            
+            for(int i=0; i<10;i++)
+            {
+                System.out.println("Enter Student Details");
+                StudentID=sin.next();
+                StudentName=sin.next();
+                StudentAge=sin.nextInt();
+                StudentCity=sin.next();
+                StudentCountry=sin.next();
+            }
+            if (StudentAge>21)
+            {
+                int count=0;
+                count=count+1;
+                System.out.println("Total Count of Student is"+count);
+            }
+            
+            if(StudentCity == "Pune")
+            {
+                PuneCount = PuneCount+1;
+            }
+            else if(StudentCity == "Mumbai")
+            {
+                MumbaiCount = MumbaiCount+1;
+            }
+        }
+  
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q2.Write a java program to accept details of 10 employees like 
+EmpID string
+EmpName String
+EmpAge int
+EmpSal int
+EmpDept String
+
+display the name of employee who earn maximum.
+display the name of employee who is elder to all.
+
+Ans.
+
+package javaexercise;
+import java.util.Scanner;
+
+public class EmpDetailsEx 
+{
+    String Ename;
+    String EID;
+    int Age;
+    int Sal;
+    int max=0;
+    
+    public void edetail()
+    {
+        Scanner sin= new Scanner(System.in);
+        String n=null;
+        String id=null;
+        
+        for(int i=0;i<10;i++)
+        {
+            System.out.println("Enter the Employee Details");
+           Ename=sin.next();
+           EID=sin.next();
+           Age=sin.nextInt();
+           Sal=sin.nextInt();
+           
+           if(Sal>max)
+           {
+               max=Sal;
+               String n=Ename;
+               String id=EID;
+           }
+        }
+        
+        System.out.println(n);
+        System.out.println(id);
+        System.out.println(max);
+        
+    }
+    
+    public void numcount()
+    {
+        int num,count=0;
+        Scanner sin=new Scanner(System.in);
+        for (int i=0; i<10 ;i++)
+        {
+            System.out.println("Enter the number");
+            num=sin.nextInt();
+            
+            if(num>10)
+            {
+                count=count+1;
+            }
+        }
+        System.out.println(count);
+    }
+    
+    public static void main(String[] args)
+    {
+        EmpDetailsEx Eobj=new EmpDetailsEx();
+        Eobj.edetail();
+        Eobj.numcount();
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

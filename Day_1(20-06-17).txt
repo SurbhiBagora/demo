@@ -1,0 +1,118 @@
+Q1. What will the logic for adding two numbers?
+Ans. Steps:
+1.Start
+2.Take one number
+3.Take second number
+4.Use + sign to represent addition
+5.Give result after addition.
+6.Stop.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q2. what will be the logic for checking your egibility for voting?
+Ans. Steps:
+1.Start
+2.Take age from user
+3.Check age >=18 or not
+4.If age >=18 then you are eligible for voting
+5.if age is not greater than 18 then you are not eligible for voting
+6.Stop.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q3. I have list of age of 10 students please check and confirm how many students are eligible for voting?
+Ans. Steps:
+1.Start
+2.Start taking age from first count till 10
+3.Taken first age from user.
+4.Check the age >=18
+5.If age >=18 then you are eligible for voting
+6.Count the eligible students
+7.If age <18 then you are not eligible for voting
+8.Count the not eligible students
+9.Count the number of age taken so far and compare it with total number of age.
+10.If count is less than 10 increase the count to take next age and move the control to secind step
+11.Stop.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q4.You have details of passengers flied by Indigo Airways of June month.Write the logic to check how many total passengers flied to Delhi,Kolkata,Chennai And Mumbai?
+Ans. Steps:
+1.Start
+2.Start taking passengers details like PNR No. , Name, Date and destinations till user confirms the availability of more passengers
+3.Check destinations by using PNR no. of day wise
+4.If destination is Delhi count its day wise
+5.If destination is Mumbai count its day wise
+6.If destination is Kolkata count its day wise
+7.If destination is Chennai count its day wise
+8.Check if more passenger available.If yes then give the control to step 2
+9.Sum day wise count of Delhi
+10.Sum day wise count of Mumbai
+11.Sum day wise count of Kolkata
+12.Sum day wise count of Chennai
+13.Check which is highest and based upon that take decision
+14.Stop.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q5.You have been given list of Indian citizens which contains ID, Name, Gender, Age, Qualification, City, State, Country, Salary, Employment Status, Marital Status.
+Analysis to be done:
+a)Write a logic to check total male and female.
+b)Write to check how many total citizens are graduates.
+c)Write a logic to check how many citizens are having income more than 1 lakh per month
+d)Write a logic to check how many are married , Widow , Single.
+
+Ans. Supposing we have list of 20 Indian Citizens with the above details:-
+a)
+Steps:
+1.Start
+2.Take the details from the list
+3.If gender==Male
+4.Count total numbers of male
+5.If gender==Female
+6.Count total numbers of female
+5.Show details of total male and female
+6.Stop.
+
+b)
+Steps:
+1.Start
+2.Take the details from the list
+3.If Qualification is equal to 10
+4.Count the total 10th
+5.If Qualification is equal to 12
+6.Count the total of 12th
+7.If Qualification is equal to Graduation
+8.Count the total of Graduation
+9.If Qualification is equal to PostGraduation
+10.Count the total of PostGraduation
+11.If Qualification is equal to PHD
+12.Count the total of PHD
+13.Show total count of Graduate Citizens
+14.Stop.
+
+c)
+Steps:
+1.Start
+2.Take the details from the list
+3.If salary >=1 Lakh
+4.Count the total no. of citizens
+5.If salary <1 Lakh
+6.Count the total no. of citizens
+7.show the total count of citizens having sakary >= 1 Lakh
+8.Stop.
+
+d)
+Steps:
+1.Start
+2.Take the details from the list
+3.If Marital Status = Married
+4.Count the total No. of citizens.
+5.If Marital Status = Single
+6.Count the total No. of citizens
+7.If Marital Status = Widow
+8.Count the total No. of citizens
+9.Sow the total of all i.e. Married Citizens, Single Citizens and Widow Citizens.
+10.Stop.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
